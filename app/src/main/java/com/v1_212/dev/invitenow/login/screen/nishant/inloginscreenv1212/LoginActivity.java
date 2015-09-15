@@ -60,9 +60,9 @@ public class LoginActivity extends FragmentActivity {
 
         // Enable Local Datastore.
         Parse.enableLocalDatastore(this);
-        Parse.initialize(this, "FzXHh08F1VRL1hswqO2JAd6IszsMObeBuFV5wvDe", "JCjwtEqSlc9bCbAABnNOfWMxe73jOP1QRaySJz5N");
+        Parse.initialize(this, "Parse Key 1", "Parse Key 2");
         ParseFacebookUtils.initialize(this);
-        ParseTwitterUtils.initialize("CP2pLuc8vcvbjylFOwera6pBi", "lyx7oca8CbtchUklM46SKy7EaXD3xWV3BTrENkmU58tfGoVgxx");
+        ParseTwitterUtils.initialize("Twitter API Key", "Twitter API Key Secret");
 
         ParseObject testObject = new ParseObject("TestObject");
         testObject.put("foo", "bar 2 ");
